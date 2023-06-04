@@ -7,8 +7,6 @@ use Illuminate\Http\Request;
 
 class FooterController extends Controller
 {
-
-
     function footer(){
 
         $footer = Footer::findorFail(1);
@@ -35,16 +33,8 @@ class FooterController extends Controller
             'instagram'=>$request->instagram,
             'linkdin'=>$request->linkdin,
             'behence'=>$request->behence,
-
-
         ]);
 
         return back()->with('Up_f', 'Footer updated successfully!');
-
     }
-
-
-
-
-
 }
